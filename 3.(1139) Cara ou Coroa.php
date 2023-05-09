@@ -1,7 +1,7 @@
 <?php
 
-while (true) {    // Lê o número de jogadas
-  $n = intval(fgets(STDIN));
+while (true) {    
+  $n = intval(fgets(STDIN)); // Lê o número de jogadas como um valor inteiro
   if ($n == 0) {      // Se o número de jogadas for zero, encerra o loop
     break;
   }
@@ -10,7 +10,7 @@ while (true) {    // Lê o número de jogadas
 
   $mary = 0;        // Conta o número de jogadas de cada tipo
   $john = 0;
-  foreach ($jogadas as $jogada) {
+  foreach ($jogadas as $jogada) { //foreach fornece uma maneira fácil de iterar sobre arrays
     if ($jogada == 0) {
       $mary++;
     } else {
