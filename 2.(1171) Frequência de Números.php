@@ -11,8 +11,8 @@ for ($i = 0; $i < $num_numeros; $i++) {   // Loop pelos números a serem lidos
   }
 }
 ksort($frequencia);   // Ordena os números em ordem crescente
-foreach ($frequencia as $numero => $freq) {   // Imprime a frequência de cada número
-  echo "$numero aparece $freq vez(es)\n";
+foreach ($frequencia as $numero => $freq) {  // para cada item (na variável $frequencia, coloque o índice na variável $numero e o valor na variável $frequencia)
+  echo "$numero aparece $freq vez(es)\n";   // Imprime a frequência de cada número
 }
 
 /*
