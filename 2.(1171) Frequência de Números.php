@@ -1,6 +1,6 @@
 <?php
 $num_numeros = intval(fgets(STDIN));    // Lê a quantidade de números a serem lidos
-$frequencia = array();    // Inicializa um array para armazenar a frequência de cada número
+$frequencia = array();    // Inicializa um array para armazenar a frequência de cada número -array- relaciona valores a chaves
 for ($i = 0; $i < $num_numeros; $i++) {   // Loop pelos números a serem lidos
   $numero = intval(fgets(STDIN));   // Lê o número atual
   if (!array_key_exists($numero, $frequencia)) {    // Se o número ainda não estiver no array de frequência, adiciona com valor 1
