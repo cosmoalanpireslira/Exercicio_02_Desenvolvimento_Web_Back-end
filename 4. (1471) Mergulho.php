@@ -8,7 +8,7 @@ while (true) {     // Lê o número de mergulhadores e o número de mergulhadore
   $mergulhadores = array_fill(1, $n, 0);    // Cria um array com o número de mergulhadores e inicializa com zero
 
   $retornaram = explode(" ", fgets(STDIN));    // Lê os números dos mergulhadores que retornaram
-  foreach ($retornaram as $mergulhador) {
+  foreach ($retornaram as $mergulhador) { //percorrerá todos os itens da coleção, disponibilizando a chave e o valor de cada elemento
     $mergulhadores[intval($mergulhador)] = 1;
   }
 
