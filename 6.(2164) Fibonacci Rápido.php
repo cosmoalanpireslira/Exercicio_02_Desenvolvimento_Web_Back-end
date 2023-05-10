@@ -8,5 +8,5 @@ $fib = (pow((1 + sqrt(5)) / 2, $n) - pow((1 - sqrt(5)) / 2, $n)) / sqrt(5);
 
 // Imprime o valor de Fibonacci correspondente ao dia informado, arredondado para duas casas decimais
 echo number_format($fib, 1, '.', '') . "\n";
-
+ 
 ?>
