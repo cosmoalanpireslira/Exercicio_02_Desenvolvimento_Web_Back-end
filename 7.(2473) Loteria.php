@@ -28,5 +28,5 @@ if ($numAcertos == 3) {
   echo "sena\n";
 } else {
   echo "azar\n";
-}
+} 
 ?>
