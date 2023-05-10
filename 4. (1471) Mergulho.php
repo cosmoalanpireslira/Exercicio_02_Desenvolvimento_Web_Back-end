@@ -2,7 +2,7 @@
 
 while (true) {
   // Lê a entrada
-  $entrada = trim(fgets(STDIN));
+  $entrada = trim(fgets(STDIN)); // trim remove os espaços em branco (whitespaces) do início e/ou fim de um texto
   // Se a entrada estiver vazia, interrompe o loop
   if ($entrada === "") break;
   
