@@ -15,7 +15,7 @@ foreach ($apostador as $numero) {
     // Se o número estiver entre os premiados, incrementa o contador de acertos
     $numAcertos++;
   }
-}
+} 
 
 // Imprime a mensagem correspondente ao número de acertos do apostador
 if ($numAcertos == 3) {
