@@ -1,0 +1,32 @@
+<?php
+
+// Lê o valor de entrada correspondente ao número de casos de teste
+$n = intval(fgets(STDIN));
+
+// Loop para processar cada caso de teste
+for ($i = 0; $i < $n; $i++) {
+
+    // Lê o valor de entrada correspondente ao número de caracteres da palavra
+    $len = intval(fgets(STDIN));
+
+    // Lê a palavra
+    $word = trim(fgets(STDIN));
+
+    // Inicializa um array de contagem de letras com zeros para todas as letras do alfabeto
+    $count = array_fill(0, 26, 0);
+
+    // Loop para percorrer cada letra da palavra e incrementar a contagem correspondente
+    for ($j = 0; $j < $len; $j++) {
+        $count[ord($word[$j]) - ord('a')]++;
+    }
+
+    // Ordena o array de contagem em ordem decrescente
+    rsort($count);
+
+    // Soma os produtos das contagens das letras do primeiro e segundo caracteres mais frequentes
+    $score = ($count[0] * ($count[0] - 1) / 2) + ($count[1] * ($count[1] - 1) / 2);
+
+    // Imprime o resultado do caso de teste
+    echo $score . "\n";
+}
+?>
