@@ -19,6 +19,6 @@ while (true) {
   } else {
     echo "$entrada nao\n"; // se não for divisivel imprime não
   }
-}
+} 
 
 ?>
