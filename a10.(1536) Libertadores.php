@@ -1,24 +1,8 @@
 <?php
-
-// Loop para ler os nomes de animais até o final do arquivo
-while (!feof(STDIN)) { //!feof - Se o ponteiro de arquivo passado não for valido você pode ter um loop infinito, porque EOF irá falhar em retornar TRUE
-  
-  // Leitura do nome do animal
-  $animal = trim(fgets(STDIN));
-  
-  // Inicialização da variável para contar as letras maiúsculas
-  $contagem = 0;
-  
-  // Loop para percorrer cada letra do nome do animal
-  for ($i = 0; $i < strlen($animal); $i++) {
-    
-    // Verificação se a letra atual é maiúscula
-    if (ctype_upper($animal[$i])) {
-      $contagem++; // Incrementa a contagem
-    }
-  }
-  
-  // Impressão da contagem de letras maiúsculas
-  echo $contagem . "\n";
+while (($line = fgets(STDIN)) !== false) {  // Lê as entradas até o final do arquivo
+    $input = explode(" ", $line);  // Separa as entradas em um array de strings
+    $result = ($input[0] * $input[1]) / ($input[2] - $input[0] + $input[3]);  // Calcula o resultado da fórmula
+    echo intval($result) . "\n";  // Imprime o resultado como um número inteiro
 }
 ?>
+
